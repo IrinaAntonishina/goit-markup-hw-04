@@ -82,7 +82,6 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 
 .header-logo {
@@ -145,7 +144,6 @@ span {
   fill: currentColor;
 }
 
-
 /* -----------------Hero-------------- */
 
 .hero {
@@ -199,9 +197,6 @@ span {
 .btn:hover,
 .btn:focus {
   background-color: var(--color-button);
-}
-
-.hero {
 }
 
 /* ---------------Feature---------------- */
@@ -303,7 +298,8 @@ span {
   flex-basis: calc(100% / 4 - 30px);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-text {
@@ -343,8 +339,9 @@ span {
   border-radius: 50%;
   background-color: #2196f3;
 }
-.team-icon:hover .icon,
-.team-icon:focus .icon {
+
+.team-link-icon:focus .icon,
+.team-link-icon:hover .icon {
   fill: #ffffff;
 }
 
@@ -379,12 +376,14 @@ span {
   fill: var(--color-accent);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-link:hover {
   border: 1px solid var(--color-accent);
   cursor: pointer;
+  fill: var(--color-accent);
 }
-
+.client-item:focus .client-group {
+  fill: var(--color-accent);
+}
 /* -------------Footer--------------- */
 
 .footer {
@@ -443,6 +442,7 @@ span {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .address {
   flex-direction: column;
@@ -553,7 +553,7 @@ span {
 }
 
 .portfolio-item {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-title {
@@ -578,7 +578,11 @@ span {
 }
 
 .portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+.portfolio-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link:focus,
+.portfolio-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
